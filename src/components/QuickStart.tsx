@@ -32,7 +32,7 @@ export function QuickStart() {
     <section id="install" className="py-28 md:py-36 px-6">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          num="05"
+          num="04"
           kicker="the install"
           title={
             <>

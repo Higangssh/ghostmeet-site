@@ -1,9 +1,8 @@
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
-import { Compare } from "@/components/Compare";
+import { LiveDemo } from "@/components/LiveDemo";
 import { FeatureGrid } from "@/components/FeatureGrid";
 import { HowItWorks } from "@/components/HowItWorks";
-import { LiveDemo } from "@/components/LiveDemo";
 import { QuickStart } from "@/components/QuickStart";
 import { UseCases } from "@/components/UseCases";
 import { FAQ } from "@/components/FAQ";
@@ -16,10 +15,9 @@ export default function Page() {
       <Nav />
       <main>
         <Hero />
-        <Compare />
+        <LiveDemo />
         <FeatureGrid />
         <HowItWorks />
-        <LiveDemo />
         <QuickStart />
         <UseCases />
         <FAQ />

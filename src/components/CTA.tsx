@@ -10,11 +10,9 @@ export function CTA() {
           sshlab — dispatch 001 · end
         </div>
         <h2 className="display-xl">
-          Stop paying
+          Keep your meetings
           <br />
-          <span className="italic-display">thirty dollars a month</span>
-          <br />
-          to host your own words.
+          <span className="italic-display">on your own machine.</span>
         </h2>
         <p className="mt-10 font-mono text-[14px] text-ink-dim max-w-xl mx-auto leading-relaxed">
           ghostmeet is free, open source, and runs entirely on your machine.

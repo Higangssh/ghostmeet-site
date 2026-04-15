@@ -26,7 +26,7 @@ export function UseCases() {
     <section className="py-28 md:py-36 px-6">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          num="06"
+          num="05"
           kicker="who this is for"
           title={
             <>

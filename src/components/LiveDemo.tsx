@@ -79,7 +79,7 @@ export function LiveDemo() {
     <section id="demo" className="py-28 md:py-36 px-6">
       <div className="mx-auto max-w-6xl">
         <SectionHeader
-          num="04"
+          num="01"
           kicker="a silent demo"
           title={
             <>

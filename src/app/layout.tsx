@@ -3,7 +3,7 @@ import { Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 const instrument = Instrument_Serif({
-  variable: "--font-instrument",
+  variable: "--font-display",
   subsets: ["latin"],
   weight: ["400"],
   style: ["normal", "italic"],
@@ -11,7 +11,7 @@ const instrument = Instrument_Serif({
 });
 
 const jetbrains = JetBrains_Mono({
-  variable: "--font-jetbrains",
+  variable: "--font-mono-font",
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   display: "swap",

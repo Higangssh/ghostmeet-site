@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ghostmeet-site
 
-## Getting Started
+Landing page for [ghostmeet](https://github.com/Higangssh/ghostmeet) — the invisible, self-hosted AI meeting assistant.
 
-First, run the development server:
+🔗 **Live**: https://ghostmeet.sshlab.dev
+
+---
+
+## Stack
+
+- **Next.js 16** (static export — `output: 'export'`)
+- **Tailwind CSS v4**
+- **Motion** + **Lucide** icons
+- Fonts: Bricolage Grotesque (display) + Geist Mono (body)
+- Hosted on **Cloudflare Pages**
+
+## Develop
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+Outputs static site to `/out`.
 
-To learn more about Next.js, take a look at the following resources:
+## Deploy (Cloudflare Pages, Git-connected)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Cloudflare Pages builds on every push to `main`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**One-time setup:**
+1. Cloudflare dashboard → Workers & Pages → Create → Pages → Connect to Git
+2. Pick this repo, set:
+   - Framework preset: **Next.js (Static HTML Export)**
+   - Build command: `npm run build`
+   - Build output: `out`
+   - Env var: `NODE_VERSION=20`
+3. Add custom domain `ghostmeet.sshlab.dev` in Custom Domains.
 
-## Deploy on Vercel
+After that, `git push` redeploys automatically.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT

@@ -15,8 +15,8 @@ const qs = [
     a: "No. The default `base` Whisper model runs fine on CPU for most voices. Larger models (`small`, `medium`, `large`) benefit from CUDA, but `base` is surprisingly accurate and what most people run.",
   },
   {
-    q: "How is this different from Otter / Granola / Fireflies?",
-    a: "Those are cloud services with recurring subscriptions, mandatory accounts, and terms of service that let them train on your audio. ghostmeet is a binary you run yourself. The tradeoff is that you set it up once; the reward is that no one is billing you and no one is reading your transcripts.",
+    q: "Why self-host at all?",
+    a: "Hosted transcription services are convenient, but they require uploading audio to a vendor's servers and trusting their data-handling policies. For internal meetings, customer calls under NDA, or any conversation where privacy matters, self-hosting removes the upload entirely. You set it up once and own the stack.",
   },
   {
     q: "Can I host the backend on a separate machine?",
@@ -36,7 +36,7 @@ export function FAQ() {
   return (
     <section className="py-28 md:py-36 px-6">
       <div className="mx-auto max-w-4xl">
-        <SectionHeader num="07" kicker="the questions" title={<>Fair questions,<br />direct answers.</>} />
+        <SectionHeader num="06" kicker="the questions" title={<>Fair questions,<br />direct answers.</>} />
 
         <div className="border-t border-line-strong">
           {qs.map((item) => (
