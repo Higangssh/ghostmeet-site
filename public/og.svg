@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/><feColorMatrix values="0 0 0 0 0.96 0 0 0 0 0.95 0 0 0 0 0.91 0 0 0 0.15 0"/></filter>
+    <radialGradient id="g" cx="70%" cy="30%"><stop offset="0%" stop-color="#a3ff6b" stop-opacity="0.22"/><stop offset="50%" stop-color="#a3ff6b" stop-opacity="0.04"/><stop offset="100%" stop-color="#a3ff6b" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0908"/>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect width="1200" height="630" filter="url(#n)"/>
+  <text x="80" y="140" font-family="monospace" font-size="18" fill="#6b6557" letter-spacing="3">SSHLAB — DISPATCH 001</text>
+  <text x="80" y="290" font-family="Georgia,serif" font-size="110" fill="#f5f1e8" letter-spacing="-3">The <tspan font-style="italic" fill="#b8b2a1">invisible</tspan></text>
+  <text x="80" y="400" font-family="Georgia,serif" font-size="110" fill="#f5f1e8" letter-spacing="-3">AI meeting assistant<tspan fill="#a3ff6b">.</tspan></text>
+  <text x="80" y="500" font-family="monospace" font-size="22" fill="#b8b2a1">self-hosted · whisper + claude · your audio never leaves your machine</text>
+  <text x="80" y="565" font-family="monospace" font-size="16" fill="#6b6557" letter-spacing="2">GHOSTMEET.SSHLAB.DEV · MIT</text>
+  <circle cx="1050" cy="90" r="8" fill="#a3ff6b"/>
+</svg>
